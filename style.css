@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* $breakpoints: (
-  'sm': (min-width: 768px),
+  'sm': (min-width: 640px),
   'md': (min-width: 1024px),
   'lg': (min-width: 1280px)
 ) */
@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  font-family: Hiragino Kaku Gothic Pro;
   color: #0C141E
 }
 
@@ -22,7 +23,6 @@ body {
   height: auto;
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 /* header
@@ -32,7 +32,6 @@ body {
   justify-content: space-between;
   height: calc(25vw * 0.75);
   max-height: 117px;
-  border: 1px solid blue; /* 後で消す */
 }
 
 .header__image {
@@ -61,9 +60,101 @@ body {
   max-width: 52px;
 }
 
-/* min-width: 768px
+/* MV
 ------------------------------- */
-@media (min-width:768px) {
+.mv {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background: url("images/MV.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.mv::before {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+
+.mv__figure-group {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.mv__figure {
+  width: 71px;
+  height: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mv__figure::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 71px;
+  height: 71px;
+  border: 1px solid #FFFFFF;
+  transform: rotate(-45deg);
+}
+
+.mv__text {
+  font-size: 10px;
+  color: #FFFFFF;
+}
+
+.mv__allow {
+  position: absolute;
+  left: 10%;
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+@keyframes arrowmove{
+  0% {
+    bottom: 0%;
+  }
+  50% {
+    bottom: 10%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+/* 矢印の描写 */
+.mv__allow:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 3px;
+  width: 1px;
+  height: 5px;
+  background: #FFFFFF;
+  transform: skewX(45deg);
+}
+
+.mv__allow:after{
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  width: 1px;
+  height: 95px;
+  background: #FFFFFF;
+}
+
+
+
+/* min-width: 640px
+------------------------------- */
+@media (min-width: 640px) {
   /* header
   ----------------------------- */
   .header {
@@ -78,5 +169,14 @@ body {
   .header-btn__icon {
     max-width: 20px;
     margin-top: 9px;
+  }
+
+  /* MV
+  ----------------------------- */
+  .mv {
+    height: 540px;
+  }
+  .mv__figure-group {
+    left: 88%;
   }
 }
