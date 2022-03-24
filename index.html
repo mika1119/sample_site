@@ -9,6 +9,10 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="menu.js"></script>
   </head>
 
   <body>
@@ -20,7 +24,12 @@
         <img src="images/logo.svg" class="header__image" alt="ロゴ">
         <div class="header-btn">
           <div class="header-btn__text">MENU</div>
-          <img src="images/allow.png" class="header-btn__icon" alt="icon">
+
+          <div class="header-btn__icon">
+            <span class="header-btn__bar1"></span>
+            <span class="header-btn__bar2"></span>
+          </div>
+
         </div>
       </header>
       <!-- /header -->
