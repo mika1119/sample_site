@@ -9,31 +9,50 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="menu.js"></script>
   </head>
 
   <body>
-    <div role="document" class="">
-      <!-- wrapper -->
-      <div class="wrapper">
+    <!-- wrapper -->
+    <div class="wrapper">
 
-        <!-- header -->
-        <header id="header" class="header">
-        </header>
-        <!-- /header -->
+      <!-- header -->
+      <header id="header" class="header">
+        <img src="images/logo.svg" class="header__image" alt="ロゴ">
+        <div class="header-btn">
+          <div class="header-btn__text">MENU</div>
 
-        <!-- MV -->
-        <div class="MV">
+          <div class="header-btn__icon">
+            <span class="header-btn__bar1"></span>
+            <span class="header-btn__bar2"></span>
+          </div>
+
         </div>
-        <!-- /MV -->
+      </header>
+      <!-- /header -->
 
-        <!-- footer -->
-        <footer id="footer" class="footer">
-          <p>copyright&copy;SAMPLE Inc.</p>
-        </footer>
-        <!-- footer -->
-
+      <!-- MV -->
+      <div class="mv">
+        <div class="mv__figure-group">
+          <div class="mv__allow"></div>
+          <div class="mv__figure">
+            <div class="mv__text">SCROLL<br>DOWN</div>
+          </div>
+        </div>
       </div>
-      <!-- /wrapper -->
+      <!-- /MV -->
+
+
+      <!-- footer -->
+      <footer id="footer" class="footer">
+        <p>copyright&copy;SAMPLE Inc.</p>
+      </footer>
+      <!-- footer -->
+
     </div>
+    <!-- /wrapper -->
   </body>
 </html>
