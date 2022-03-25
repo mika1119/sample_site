@@ -31,6 +31,8 @@ body {
   display: flex;
   justify-content: space-between;
   height: 60px;
+  position: relative;
+  z-index: 10;
 }
 
 .header__image {
@@ -50,6 +52,14 @@ body {
 .header-btn__text {
   font-size: 16px;
   color: #FFFFFF;
+}
+
+/* MENU CLOSE の表示切り替え */
+.header-btn__text::after {
+  content: "MENU";
+}
+.header-btn__text.active::after {
+  content: "CLOSE";
 }
 
 .header-btn__icon {
@@ -83,6 +93,18 @@ body {
 }
 .header-btn__bar2.open {
   transform: translateY(-5px) rotate(-45deg);
+}
+
+/* ナビゲーション
+------------------------------- */
+.nav {
+  width: 100%;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 10;
+  list-style: none;
 }
 
 /* MV
