@@ -104,7 +104,36 @@ body {
   top: 60px;
   left: 0;
   z-index: 10;
+}
+
+.nav__list {
   list-style: none;
+}
+
+.nav__item {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.nav__item::after {
+  content: "";
+  display: inline-block;
+  background: url("images/allow.svg") no-repeat;
+  width: 40px;
+  height: 10px;
+  margin-left: 25px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #0C141E;
+}
+
+.nav__text {
+  width: 50%;
+  display: inline-block;
+  font-size: 20px;
+  text-align: right;
 }
 
 /* MV
@@ -215,6 +244,12 @@ body {
 
   .header-btn {
     width: 180px;
+  }
+
+  /* ナビゲーション
+  ----------------------------- */
+  .nav {
+    top: 90px;
   }
 
   /* MV
