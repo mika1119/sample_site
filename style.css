@@ -31,6 +31,8 @@ body {
   display: flex;
   justify-content: space-between;
   height: 60px;
+  position: relative;
+  z-index: 10;
 }
 
 .header__image {
@@ -50,6 +52,14 @@ body {
 .header-btn__text {
   font-size: 16px;
   color: #FFFFFF;
+}
+
+/* MENU CLOSE の表示切り替え */
+.header-btn__text::after {
+  content: "MENU";
+}
+.header-btn__text.active::after {
+  content: "CLOSE";
 }
 
 .header-btn__icon {
@@ -85,6 +95,55 @@ body {
   transform: translateY(-5px) rotate(-45deg);
 }
 
+/* ナビゲーション
+------------------------------- */
+.nav {
+  width: 100%;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 10;
+}
+
+.is-open{
+  display: none;
+}
+
+.nav__list {
+  width: 100%;
+  list-style: none;
+}
+
+.nav__item {
+  padding: 15px 0;
+}
+
+.nav__item::after {
+  content: "";
+  display: inline-block;
+  background: url("images/allow.svg") no-repeat;
+  width: 40px;
+  height: 10px;
+  margin-left: 25px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #0C141E;
+}
+
+.nav__text {
+  width: 50%;
+  display: inline-block;
+  font-size: 20px;
+  text-align: right;
+}
+
+.nav__text span {
+  display: none;
+}
+
 /* MV
 ------------------------------- */
 .mv {
@@ -105,14 +164,25 @@ body {
   content: "";
 }
 
-.mv__figure-group {
+.mv__title {
+  font-size: 32px;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  white-space: nowrap;
+}
+
+.figure-group {
   position: absolute;
   bottom: 4%;
   left: 50%;
   transform: translate(-50%);
 }
 
-.mv__figure {
+.figure-group__figure {
   width: 71px;
   height: 71px;
   display: flex;
@@ -120,7 +190,7 @@ body {
   align-items: center;
 }
 
-.mv__figure::before {
+.figure-group__figure::before {
   content: "";
   position: absolute;
   display: block;
@@ -130,12 +200,12 @@ body {
   transform: rotate(-45deg);
 }
 
-.mv__text {
+.figure-group__text {
   font-size: 10px;
   color: #FFFFFF;
 }
 
-.mv__allow {
+.figure-group__allow {
   position: absolute;
   left: 10%;
   animation: arrowmove 1s ease-in-out infinite;
@@ -154,7 +224,7 @@ body {
 }
 
 /* 矢印の描写 */
-.mv__allow:before {
+.figure-group__allow:before {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -165,7 +235,7 @@ body {
   transform: skewX(45deg);
 }
 
-.mv__allow:after{
+.figure-group__allow:after{
   content: "";
   position: absolute;
   bottom: -15px;
@@ -195,12 +265,67 @@ body {
     width: 180px;
   }
 
+  /* ナビゲーション
+  ----------------------------- */
+  .nav {
+    top: 90px;
+    height: 100px;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .nav__item {
+    width: 25%;
+    padding: 0;
+  }
+
+  .nav__item::after {
+    display: none;
+  }
+
+  .nav__item + .nav__item {
+    border-left: 1px solid #E9E9E9;
+  }
+
+  .nav__item:hover {
+    background-color: #6692C1;
+  }
+
+  .nav__text {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .nav__text span {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .nav__text:hover {
+    color: #FFFFFF;
+  }
+
   /* MV
   ----------------------------- */
   .mv {
     height: 540px;
   }
-  .mv__figure-group {
+
+  .mv__title {
+    font-size: 40px;
+  }
+
+  .br-sp {
+    display: none;
+  }
+
+  .figure-group {
     left: 88%;
   }
 }
