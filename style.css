@@ -106,6 +106,10 @@ body {
   z-index: 10;
 }
 
+.is-open{
+  display: none;
+}
+
 .nav__list {
   width: 100%;
   list-style: none;
