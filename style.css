@@ -106,7 +106,7 @@ body {
   z-index: 10;
 }
 
-.is-open{
+.is-open {
   display: none;
 }
 
@@ -265,6 +265,10 @@ body {
   white-space: nowrap;
 }
 
+.br-flex {
+  display: none;
+}
+
 /* タイトルの図形 */
 .title__polygon {
   width: 0;
@@ -307,6 +311,43 @@ body {
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
+}
+
+/* コンタクト
+------------------------------- */
+.contact {
+  height: 180px;
+  padding: 50px 0;
+}
+.contact__text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.contact__link {
+  color: #0C141E;
+  text-decoration: none;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #0C141E;
+  margin: 0 62px;
+  padding: 10px;
+}
+
+.contact-btn__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact-btn__imege {
+  width: 40px;
+  margin-left: 12px;
 }
 
 
@@ -399,6 +440,7 @@ body {
     justify-content: space-between;
     gap: 0 25px;
     padding: 25px 37px;
+    margin-bottom: 25px;
   }
 
   .catch-group {
@@ -410,5 +452,30 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
+  }
+}
+
+/* min-width: 1024px
+------------------------------- */
+@media (min-width: 1024px) {
+  /* タイトル
+  ----------------------------- */
+  .title-wrap_flex {
+    width: 200px;
+    height: 430px;
+  }
+  .br-flex {
+    display: block;
+  }
+
+  /* メインコンテンツ
+  ----------------------------- */
+  .contents {
+    display: flex;
+    border: 1px solid red;
+  }
+
+  .catch {
+    padding: 0;
   }
 }
