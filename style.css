@@ -116,7 +116,9 @@ body {
 }
 
 .nav__item {
+  border-bottom: 2px solid #E9E9E9;
   padding: 15px 0;
+  margin: 0 15px;
 }
 
 .nav__item::after {
@@ -134,7 +136,7 @@ body {
 }
 
 .nav__text {
-  width: 50%;
+  width: 55%;
   display: inline-block;
   font-size: 20px;
   text-align: right;
@@ -430,7 +432,9 @@ body {
 
   .nav__item {
     width: 25%;
+    border-bottom: 0;
     padding: 0;
+    margin: 0;
   }
 
   .nav__item::after {
@@ -535,6 +539,20 @@ body {
 /* min-width: 1024px
 ------------------------------- */
 @media (min-width: 1024px) {
+  /* ナビゲーション
+  ----------------------------- */
+  .nav__list {
+    padding: 0 50px;
+  }
+  .nav__item {
+    border-left: 1px solid #E9E9E9;
+    border-right: 1px solid #E9E9E9;
+  }
+  .nav__item + .nav__item {
+    border-left: 0;
+    border-right: 1px solid #E9E9E9;
+  }
+  
   /* タイトル
   ----------------------------- */
   .title-wrap_flex {
