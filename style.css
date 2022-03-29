@@ -383,6 +383,19 @@ body {
   margin-bottom: 15px;
 }
 
+/* map
+------------------------------- */
+.map {
+  width: 100%;
+  height: 400px;
+}
+
+.map__image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
 
 /* min-width: 640px
 ------------------------------- */
