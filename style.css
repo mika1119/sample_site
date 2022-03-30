@@ -364,7 +364,8 @@ body {
   padding: 10px;
 }
 
-.info-btn:hover {
+.info-btn:hover,
+.info-btn:focus {
   color: #FFFFFF;
   background-color: #0C141E;
   background-image: url(images/allow_w.svg);
