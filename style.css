@@ -139,6 +139,7 @@ body {
   width: 55%;
   display: inline-block;
   font-size: 20px;
+  font-weight: 700;
   text-align: right;
 }
 
@@ -474,6 +475,7 @@ body {
   .nav__text span {
     display: block;
     font-size: 16px;
+    font-weight: initial;
     margin-top: 10px;
   }
 
