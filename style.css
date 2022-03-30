@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* $breakpoints: (
-  'sm': (min-width: 640px),
+  'sm': (min-width: 768px),
   'md': (min-width: 1024px),
   'lg': (min-width: 1280px)
 ) */
@@ -389,6 +389,10 @@ body {
   padding: 25px 15px 50px;
 }
 
+.post-wrap {
+  margin: 0 auto;
+}
+
 .post__title {
   font-size: 32px;
   line-height: 48px;
@@ -402,6 +406,10 @@ body {
   margin-bottom: 15px;
 }
 
+.post-group__date {
+  font-weight: 700;
+}
+
 /* map
 ------------------------------- */
 .map {
@@ -410,9 +418,9 @@ body {
 }
 
 
-/* min-width: 640px
+/* min-width: 768px
 ------------------------------- */
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   /* header
   ----------------------------- */
   .header {
@@ -536,8 +544,11 @@ body {
   /* post
   ----------------------------- */
   .post {
-    height: 418px;
     padding: 50px 0;
+  }
+
+  .post-wrap {
+    max-width: 654px;
   }
 
   .post__title {
@@ -546,11 +557,14 @@ body {
 
   .post-group {
     display: flex;
-    justify-content: center;
+  }
+
+  .post-group__text {
+    width: 82%;
   }
 
   .post-group__date {
-    margin-right: 12px;
+    width: 18%;
   }
 }
 
