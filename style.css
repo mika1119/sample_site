@@ -301,7 +301,19 @@ body {
 .catch-group__image {
   width: 100%;
   height: 230px;
-  object-fit: cover;
+  background-size: cover;
+}
+
+.catch-group__image_01 {
+  background-image: url(images/dev.jpg);
+}
+
+.catch-group__image_02 {
+  background-image: url(images/consul.jpg);
+}
+
+.catch-group__image_03 {
+  background-image: url(images/office.jpg);
 }
 
 .catch-group__title {
@@ -485,12 +497,14 @@ body {
 
   /* メインコンテンツ
   ----------------------------- */
+  .contents {
+    margin-bottom: 25px;
+  }
   .catch {
     display: flex;
     justify-content: space-between;
     gap: 0 25px;
     padding: 25px 37px;
-    margin-bottom: 25px;
   }
 
   .catch-group {
@@ -507,7 +521,6 @@ body {
   .info-wrap {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
   }
 
   .info {
@@ -556,8 +569,8 @@ body {
   /* タイトル
   ----------------------------- */
   .title-wrap_flex {
-    width: 200px;
-    height: 430px;
+    max-width: 200px;
+    height: auto;
   }
 
   .title-wrap_height {
@@ -576,7 +589,7 @@ body {
 
   .catch {
     max-width: 1000px;
-    height: 430px;
+    height: auto;
     padding: 25px;
   }
 
