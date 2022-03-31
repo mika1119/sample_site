@@ -121,6 +121,10 @@ body {
   margin: 0 15px;
 }
 
+.nav__item:last-child {
+  border: none;
+}
+
 .nav__item::after {
   content: "";
   display: inline-block;
@@ -415,6 +419,45 @@ body {
 .map {
   width: 100%;
   height: 400px;
+}
+
+/* footer
+------------------------------- */
+.footer {
+  background-color: #203354; 
+}
+
+.footer-wrap {
+  padding: 50px 15px 0;
+}
+
+.footer__image {
+  width: 200px;
+}
+
+.footer__address {
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 25px 0;
+}
+
+.footer-nav__sm {
+  background-color: #90C2EB;
+}
+
+.nav__item_footer_border-color {
+  border-bottom: 2px solid #0C141E;
+}
+
+.nav__item_margin {
+  margin: 0;
+}
+
+.copyright {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 25px;
 }
 
 
