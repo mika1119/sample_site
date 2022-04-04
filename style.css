@@ -743,6 +743,12 @@ body {
     width: 1000px;
   }
 
+  /* post
+  ----------------------------- */
+  .post-wrap_width {
+    max-width: 1100px;
+  }
+
   /* footer
   ----------------------------- */
   .footer__image {
