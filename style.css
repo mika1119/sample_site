@@ -619,8 +619,16 @@ body {
     padding: 50px 0;
   }
 
+  .post_padding {
+    padding: 50px;
+  }
+
   .post-wrap {
     max-width: 654px;
+  }
+
+  .post-wrap_width {
+    max-width: 924px;
   }
 
   .post__title {
@@ -629,6 +637,10 @@ body {
 
   .post-group {
     display: flex;
+  }
+
+  .post-group_padding {
+    padding: 25px;
   }
 
   .post-group__text {
