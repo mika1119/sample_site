@@ -551,6 +551,12 @@ body {
 /* min-width: 768px
 ------------------------------- */
 @media (min-width: 768px) {
+  /* 共通部分
+  ----------------------------- */
+  .main-contents {
+    margin-bottom: 25px;
+  }
+
   /* header
   ----------------------------- */
   .header {
@@ -707,6 +713,32 @@ body {
 
   .post-group__date {
     width: 18%;
+  }
+
+  /* contact
+  ----------------------------- */
+  .form {
+    padding: 50px 50px 25px;
+  }
+
+  .form__item {
+    margin-bottom: 25px;
+  }
+
+  .form__label {
+    margin-bottom: 15px;
+  }
+
+  .form__input {
+    padding: 8px 15px;
+  }
+
+  .form__textarea {
+    padding: 8px 15px;
+  }
+
+  .form-btn-wrap {
+    padding: 25px 0;
   }
 
   /* footer
