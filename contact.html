@@ -69,7 +69,7 @@
       <div class="wrapper">
         <!-- title -->
         <div class="title-wrap">
-          <div class="title__text">NEWS</div>
+          <div class="title__text">CONTACT</div>
           <div class="title__polygon"></div>
         </div>
         <!-- /title -->
@@ -78,34 +78,33 @@
 
       <!-- main-contents -->
       <div class="main-contents">
-        <!-- post -->
-        <div class="post post_padding post_color wrapper">
-          <!-- post-wrap -->
-          <div class="post-wrap post-wrap_width">
-            <div class="post-group post-group_border post-group_padding">
-              <div class="post-group__date post-group__date_weight">0000-00-00</div>
-              <div class="post-group__text">ここにニューステキストが入ります。ここにニューステキストが入ります。</div>
+        <!-- form -->
+        <div class="form wrapper">
+          <form method="post">
+            <div class="form__item">
+              <label for="name" class="form__label">お名前</label>
+              <input type="text" id="name" name="name" placeholder="三府　一郎" class="form__input">
             </div>
-            <div class="post-group post-group_border post-group_padding">
-              <div class="post-group__date post-group__date_weight">0000-00-00</div>
-              <div class="post-group__text">ここにニューステキストが入ります。ここにニューステキストが入ります。</div>
+            <div class="form__item">
+              <label for="email" class="form__label">E-mail</label>
+              <input type="mail" id="email" name="email" placeholder="example@example.com" class="form__input">
             </div>
-            <div class="post-group post-group_border post-group_padding">
-              <div class="post-group__date post-group__date_weight">0000-00-00</div>
-              <div class="post-group__text">ここにニューステキストが入ります。ここにニューステキストが入ります。</div>
+            <div class="form__item">
+              <label for="email-confirmation" class="form__label">E-mail(確認用)</label>
+              <input type="mail" id="email-confirmation" name="email-confirmation" placeholder="example@example.com" class="form__input">
             </div>
-            <div class="post-group post-group_border post-group_padding">
-              <div class="post-group__date post-group__date_weight">0000-00-00</div>
-              <div class="post-group__text">ここにニューステキストが入ります。ここにニューステキストが入ります。</div>
+            <div class="form__item form__item_margin-bottom">
+              <label for="message" class="form__label">お問い合わせ内容</label>
+              <textarea id="message" name="message" class="form__textarea"></textarea>
             </div>
-            <div class="post-group post-group_border post-group_padding">
-              <div class="post-group__date post-group__date_weight">0000-00-00</div>
-              <div class="post-group__text">ここにニューステキストが入ります。ここにニューステキストが入ります。</div>
+            <div class="form-btn-wrap">
+              <div class="form-btn">
+                <input type="submit" value="送信内容確認" class="form-btn__text">
+              </div>
             </div>
-          </div>
-          <!-- /post-wrap -->
+          </form>
         </div>
-        <!-- /post -->
+        <!-- /form -->
       </div>
       <!-- /main-contents -->
 
@@ -120,17 +119,6 @@
 
         <!-- info-wrap -->
         <div class="info-wrap">
-          <!-- info -->
-          <div class="info">
-            <div class="info__text">ご依頼・ご相談はこちらから</div>
-            <a href="#" class="info__link">
-              <div class="info-btn">
-                <div class="info-btn__text">CONTACT</div>
-              </div>
-            </a>
-          </div>
-          <!-- /info -->
-
           <!-- info -->
           <div class="info info_color">
             <div class="info__text">採用情報はこちらから</div>
