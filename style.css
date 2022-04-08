@@ -397,8 +397,17 @@ body {
   padding: 50px 15px 25px;
 }
 
+.post_padding_50 {
+  padding: 50px 15px;
+}
+
 .post_color {
   background-color: #E9E9E9;
+  color: #0C141E;
+}
+
+.post_color_init {
+  background-color: initial;
   color: #0C141E;
 }
 
@@ -443,6 +452,10 @@ body {
 
 .post-group__date_margin_bottom {
   margin-bottom: 8px;
+}
+
+.post-group__list {
+  padding-left: 16px;
 }
 
 /* map
@@ -721,6 +734,10 @@ body {
 
   .post-group__text {
     width: 82%;
+  }
+
+  .post-group__text_width {
+    width: 100%;
   }
 
   .post-group__date {
