@@ -441,6 +441,10 @@ body {
   font-weight: initial;
 }
 
+.post-group__date_margin_bottom {
+  margin-bottom: 8px;
+}
+
 /* map
 ------------------------------- */
 .map {
@@ -672,6 +676,14 @@ body {
     height: 203px;
   }
 
+  .info_height {
+    height: auto;
+  }
+
+  .info_padding {
+    padding: 50px 0 0;
+  }
+
   .info-btn {
     width: 238px;
     height: 54px;
@@ -713,6 +725,10 @@ body {
 
   .post-group__date {
     width: 18%;
+  }
+
+  .post-group__date_margin_bottom {
+    margin-bottom: 0;
   }
 
   /* contact
