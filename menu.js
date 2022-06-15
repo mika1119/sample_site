@@ -48,3 +48,7 @@ webapp.textContent = "hello world!";
 // console.log(catchContainer);
 // console.log(catchContainer.innerHTML);
 // console.log(catchContainer.textContent);
+
+const webtxt = document.getElementById('webtxt');
+console.log(webtxt);
+webtxt.textContent = 2 + 5;
