@@ -58,7 +58,7 @@ body {
 .header-btn__text::after {
   content: "MENU";
 }
-.header-btn__text.active::after {
+.header-btn.is-open .header-btn__text::after {
   content: "CLOSE";
 }
 
@@ -88,10 +88,10 @@ body {
 }
 
 /* メニュークリック 線の位置 */
-.header-btn__bar1.open {
+.header-btn.is-open .header-btn__bar1 {
   transform: translateY(5px) rotate(45deg);
 }
-.header-btn__bar2.open {
+.header-btn.is-open .header-btn__bar2 {
   transform: translateY(-5px) rotate(-45deg);
 }
 
@@ -104,11 +104,16 @@ body {
   top: 60px;
   left: 0;
   z-index: 10;
-}
-
-.is-open {
   display: none;
 }
+
+.nav.is-open {
+  display: block;
+}
+
+/* .is-open {
+  display: none;
+} */
 
 .nav__list {
   width: 100%;
@@ -324,7 +329,7 @@ body {
 .catch-group__title {
   font-size: 20px;
   line-height: 30px;
-  margin: 15px 0; 
+  margin: 15px 0;
 }
 
 .catch-group__text {
@@ -567,7 +572,7 @@ body {
 }
 
 .footer {
-  background-color: #203354; 
+  background-color: #203354;
 }
 
 .footer__image {
@@ -804,7 +809,7 @@ body {
   .about-items_bg_reverse01 {
     background-color: #90C2EB;
   }
-  
+
   .about-items_bg_reverse02 {
     background-color: #6692C1;
   }
@@ -893,7 +898,7 @@ body {
     border-left: 0;
     border-right: 1px solid #E9E9E9;
   }
-  
+
   /* タイトル
   ----------------------------- */
   .title-wrap_flex {
