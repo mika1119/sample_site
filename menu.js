@@ -51,4 +51,14 @@ webapp.textContent = "hello world!";
 
 const webtxt = document.getElementById('webtxt');
 console.log(webtxt);
-webtxt.textContent = 2 + 5;
+let webtxtInner = 2 + 5;
+webtxt.textContent = webtxtInner;
+
+const about = document.getElementById('about');
+console.log(about);
+
+if (webtxtInner === 7) {
+  about.textContent = "隣は７です"
+} else {
+  about.textContent = "隣は７ではありません"
+}
